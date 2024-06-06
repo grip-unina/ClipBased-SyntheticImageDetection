@@ -1,0 +1,5 @@
+arch: opencliplinearnext_clipL14commonpool
+model_name: clipdet_latent10k_plus
+norm_type: clip
+patch_size: Clip224
+weights_file: weights.pth

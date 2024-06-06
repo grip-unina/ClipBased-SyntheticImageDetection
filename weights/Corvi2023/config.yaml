@@ -1,0 +1,5 @@
+arch: res50nodown
+model_name: Corvi2023
+norm_type: resnet
+patch_size: null
+weights_file: weights.pth
