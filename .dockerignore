@@ -1,0 +1,10 @@
+# .dockerignore
+data
+docs
+logs
+.git
+.cache
+.git-credentials
+**/.ipynb_checkpoints
+**/__pycache__
+*.csv
