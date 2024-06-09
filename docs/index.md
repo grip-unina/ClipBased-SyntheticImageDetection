@@ -29,17 +29,17 @@ affiliations:
 [![arXiv](https://img.shields.io/badge/-arXiv-B31B1B.svg?style=for-the-badge)](https://arxiv.org/abs/2312.00195)
 [![GRIP](https://img.shields.io/badge/-GRIP-0888ef.svg?style=for-the-badge)](https://www.grip.unina.it)
 
-Aim of this work is to explore the potential of pre-trained vision-language models (VLMs) for universal detection of AI-generated images. We develop a lightweight detection strategy based on CLIP features and study its performance in a wide variety of challenging scenarios.
-We find that, unlike previous belief, it is neither necessary nor convenient to use a large domain-specific dataset for training.
-On the contrary, by using only a handful of example images from a single generative model, a CLIP-based detector exhibits a surprising generalization ability and high robustness across several different architectures, including recent commercial tools such as Dalle-3, Midjourney v5, and Firefly.
-We match the SoTA on in-distribution data, and improve largely above it in terms of generalization to out-of-distribution data (+6% in terms of AUC) and robustness to impaired/laundered data (+13%). 
+The aim of this work is to explore the potential of pretrained vision-language models (VLMs) for universal detection of AI-generated images. We develop a lightweight detection strategy based on CLIP features and study its performance in a wide variety of challenging scenarios.
+We find that, contrary to previous beliefs, it is neither necessary nor convenient to use a large domain-specific dataset for training.
+On the contrary, by using only a handful of example images from a single generative model, a CLIP-based detector exhibits surprising generalization ability and high robustness across different architectures, including recent commercial tools such as Dalle-3, Midjourney v5, and Firefly.
+We match the state-of-the-art (SoTA) on in-distribution data and significantly improve upon it in terms of generalization to out-of-distribution data (+6% AUC) and robustness to impaired/laundered data (+13%).
 
 <center>
 <img src="./graph.svg" alt="images" width="500pt" /><br />
-Area Under ROC Curve (%) on unseen synthetic generators (x-axis) and on post-processed data (y-axis).
-The first number measures the generalization ability of the detector, the second its robustness to possible impairments.
-Circle area proportional to training set size. The performance is measured over 18 different synthetic models.
-Our CLIP-based detector largely outperforms all SOTA methods with very limited training data.
+Area Under ROC Curve (AUC %) on unseen synthetic generators (x-axis) and on post-processed data (y-axis).
+The first number measures the generalization ability of the detector, the second measures its robustness to possible impairments.
+Circle area is proportional to training set size. Performance is measured over 18 different synthetic models.
+Our CLIP-based detector largely outperforms all SoTA methods with very limited training data.
 </center>
 
 
@@ -63,4 +63,3 @@ The views and conclusions contained herein are those of the authors and should n
 In addition, this work has received funding by the European Union under the Horizon Europe vera.ai project, Grant Agreement number 101070093.
 It is also supported by the PREMIER project, funded by the Italian Ministry of Education, University, and Research within the PRIN 2017 program. 
 Finally, we want to thank Koki Nagano for useful discussions, and Tero Karras, Yogesh Balaji, Ming-Yu Liu for sharing data for StyleGAN-T and eDiff-I experiments.
-

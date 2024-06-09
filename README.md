@@ -58,7 +58,7 @@ In order to use the script the follwing packages should be installed:
 	* torch
 	* timm>=0.9.10
 	* huggingface-hub>=0.23.0
-	* open_clip_torch tqdm
+	* open_clip_torch
 
 The test can be executed as follows:
 
